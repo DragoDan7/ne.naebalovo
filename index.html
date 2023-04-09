@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1 class="h1">Поздровляем ваша аркана на сфа</h1>
+        <img class="img" src="./img/arkana.jpg" alt="" />
+        <button type="button " class="button" data-modal-open>
+          Забрать аркану
+        </button>
+      </div>
+    </section>
+    <div class="main-owerlay is-hidden" data-modal>
+      <div class="modale">
+        <button type="button" class="close-buton" data-modal-close>
+          <svg class="overlay-svg" style="width: 8px; height: 8px">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <div class="form-div">
+          <h3 class="form-name">заполни для получения аркани</h3>
+          <form class="form">
+            <label class="send-list item">
+              логин
+              <br />
+              <input type="name" name="name" />
+              <br />
+            </label>
+            <label class="send-list item">
+              Пароль
+              <br />
+              <input type="Phone" name="Phone" />
+              <br />
+            </label>
+            <label class="send-list-item">
+              Повтори пароль
+              <br />
+              <input type="Email" name="Email" />
+              <br />
+            </label>
+            <label class="send-list item">
+              код для антификации
+              <br />
+              <textarea name="Comment" placeholder="Text input"></textarea>
+              <br />
+            </label>
+            <label class="send-list item">
+              <input type="checkbox" name="hobby" value="sports" checked />
+              Я подтверждаю што ето больше не мой акаунт
+            </label>
+            <br />
+            <button type="submit">Получить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
+  </body>
+</html>
